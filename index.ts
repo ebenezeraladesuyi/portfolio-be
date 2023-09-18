@@ -26,7 +26,7 @@ app.post("/mailer", async (req: Request, res: Response) => {
       service: "gmail",
       auth: {
         type: "OAuth2",
-        user: "ogbonnafinbarr@gmail.com",
+        user: "ebenezeraladesuyi@gmail.com",
         clientId: GOOGLE_ID,
         clientSecret: GOOGLE_SECRET,
         refreshToken: GOOGLE_REFRESHTOKEN,
@@ -36,7 +36,7 @@ app.post("/mailer", async (req: Request, res: Response) => {
 
     const message = {
       from: email,
-      to: "ogbonnafinbarr@gmail.com",
+      to: "ebenezeraladesuyi@gmail.com",
       subject: subject,
       text: messages,
     };
@@ -54,5 +54,5 @@ app.post("/mailer", async (req: Request, res: Response) => {
 });
 
 app.listen(2004, () => {
-  console.log(`Server is running on port 2004`);
+  console.log(`Server is running on port 2023`);
 });
